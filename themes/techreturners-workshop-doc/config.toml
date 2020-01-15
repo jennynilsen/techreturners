@@ -1,0 +1,16 @@
+title = "Kubernetes Training"
+theme = "hugo-theme-learn"
+createFromSiteMenusMain = true
+# For search functionality
+# pygmentsUseClassic            = false
+# pygmentsCodeFences            = true
+# pygmentsCodeFencesGuessSyntax = true
+# pygmentsUseClasses            = true
+[outputs]
+home = [ "HTML", "RSS", "JSON"]
+
+[params]
+themeVariant = "mine"
+editURL = "https://github.com/ansilh/k8s-training-doc/tree/master/content/"
+#menu = [ "Introduction", "Installation", "Pods & Nodes", "Labels & Annotations" ]
+showVisitedLinks = true
