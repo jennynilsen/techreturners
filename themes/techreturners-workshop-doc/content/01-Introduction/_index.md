@@ -9,4 +9,4 @@ chapter = true
 
 # Introduction
 
-In this session , we will discuss about the building blocks of container technology
+In this session , we will discuss some of the building blocks of container technology
