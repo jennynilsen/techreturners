@@ -1,0 +1,1439 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.62.2" />
+    <meta name="description" content="">
+
+
+    <link rel="icon" href="/images/favicon.png" type="image/png">
+
+    <title> :: My New Hugo Site</title>
+
+    
+    <link href="/css/nucleus.css?1579521599" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1579521599" rel="stylesheet">
+    <link href="/css/hybrid.css?1579521599" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1579521599" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1579521599" rel="stylesheet">
+    <link href="/css/auto-complete.css?1579521599" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1579521599" rel="stylesheet">
+    <link href="/css/theme.css?1579521599" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1579521599" rel="stylesheet">
+    
+      <link href="/css/theme-blue.css?1579521599" rel="stylesheet">
+    
+
+    <script src="/js/jquery-3.3.1.min.js?1579521599"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/02-pods/06-self-healing-readiness/">
+    <nav id="sidebar" class="showVisitedLinks">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <p> Tech Returners </p>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1579521599"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1579521599"></script>
+<script type="text/javascript">
+    
+        var baseurl = "http:\/\/example.org\/";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1579521599"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/01-introduction/" title="Introduction" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/01-introduction/">
+          1. Introduction
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/01-introduction/04-nodes/" title="" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/01-introduction/04-nodes/">
+          <b>- </b>Nodes
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/01-introduction/05-namespaces/" title="" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/01-introduction/05-namespaces/">
+          <b>- </b>Namespaces
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/01-introduction/05-docker/" title="" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/01-introduction/05-docker/">
+          <b>- </b>Docker
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/01-introduction/06-kubernetes/" title="" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/01-introduction/06-kubernetes/">
+          <b>- </b>Kubernetes
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/02-pods/" title="Pods &amp; Nodes" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/02-pods/">
+          2. Pods &amp; Nodes
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/02-pods/01-what-is-pod/" title="" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/02-pods/01-what-is-pod/">
+          <b>- </b>Introduction
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/02-pods/02-create-pod/" title="" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/02-pods/02-create-pod/">
+          <b>- </b>Create a Pod - Declarative
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/02-pods/03-create-pod/" title="" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/02-pods/03-create-pod/">
+          <b>- </b>Create a Pod - Imperative
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/02-pods/06-self-healing-readiness/" title="" class="dd-item 
+        parent
+        active
+        
+        ">
+      <a href="/02-pods/06-self-healing-readiness/">
+          <b>- </b>Self Healing - Readiness
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/02-pods/05-hands-on/" title="" class="dd-item ">
+        <a href="/02-pods/05-hands-on/">
+        <b>- </b>Hands on
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/02-pods/07-self-healing-liveness/" title="" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/02-pods/07-self-healing-liveness/">
+          <b>- </b>Self Healing - Liveness
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/03-labels_and_annotations/" title="Labels &amp; Annotations" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/03-labels_and_annotations/">
+          3. Labels &amp; Annotations
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/03-labels_and_annotations/01-labels/" title="" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/03-labels_and_annotations/01-labels/">
+          <b>- </b>Labels
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/03-labels_and_annotations/02-annotations/" title="" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/03-labels_and_annotations/02-annotations/">
+          <b>- </b>Annotations
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/04-services/" title="Services" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/04-services/">
+          4. Services
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/04-services/01-expose-pod/" title="" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/04-services/01-expose-pod/">
+          <b>- </b>Expose Pod
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/04-services/02-nodeport/" title="" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/04-services/02-nodeport/">
+          <b>- </b>NodePort
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/04-services/03-clusterip/" title="" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/04-services/03-clusterip/">
+          <b>- </b>ClusterIP
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/04-services/04-loadbalancer/" title="" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/04-services/04-loadbalancer/">
+          <b>- </b>LoadBalancer
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/04-services/05-endpoints/" title="" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/04-services/05-endpoints/">
+          <b>- </b>Endpoints
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/05-cheat_sheet/" title="Deployments" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/05-cheat_sheet/">
+          5. Cheat Sheet
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/05-cheat_sheet/01-deployment/" title="" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/05-cheat_sheet/01-deployment/">
+          <b>- </b>Nginx Deployment
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/05-cheat_sheet/02-expose-deployment/" title="" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/05-cheat_sheet/02-expose-deployment/">
+          <b>- </b>Expose Nginx Deployment
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/05-cheat_sheet/03-scaling/" title="" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/05-cheat_sheet/03-scaling/">
+          <b>- </b>Scaling
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+
+    
+    <section id="prefooter">
+      <hr/>
+      <ul>
+      
+      
+      
+        <li><a class="padding" href="#" data-clear-history-toggle=""><i class="fas fa-history fa-fw"></i> Clear History</a></li>
+      
+      </ul>
+    </section>
+    
+    <section id="footer">
+      <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fas fa-heart"></i></a> from <a href="https://getgrav.org">Grav</a> and <a href="https://gohugo.io/">Hugo</a></p>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                  
+                  
+                  
+                  <div id="top-github-link">
+                    <a class="github-link" title='Edit this page' href="https://github.com/ansilh/k8s-training-doc/tree/master/content/02-Pods/06-self-healing-readiness/_index.md" target="blank">
+                      <i class="fas fa-code-branch"></i>
+                      <span id="top-github-link-text">Edit this page</span>
+                    </a>
+                  </div>
+                  
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'></a> > <a href='/02-pods/'>Pods & Nodes</a> > 
+          
+         
+          
+         
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#readiness-probe">Readiness Probe</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              
+            </h1>
+          
+
+        
+
+
+
+
+	<h1 id="self-healing---readiness">Self Healing - Readiness</h1>
+<h3 id="readiness-probe">Readiness Probe</h3>
+<p>We have seen that our coffee application was listening on port 9090.
+Lets assume that the application is not coming up but Pod status showing running.
+Everyone will think that application is up.
+You entire application stack might get affected because of this.</p>
+<p>So here comes the question , &ldquo;How can I make sure my application is started, not just the Pod ?&rdquo;</p>
+<p>Here we can use Pod spec, <code>Readiness probe</code>.</p>
+<p>Official detention of readinessProbe is , &ldquo;Periodic probe of container service readiness&rdquo;.</p>
+<p>Lets rewrite the Pod specification of Coffee App and add a readiness Probe.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ vi pod-readiness.yaml
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">apiVersion: v1
+kind: Pod
+metadata:
+  name: coffee-app
+spec:
+  containers:
+  - image: ansilh/demo-coffee
+    name: coffee
+    readinessProbe:
+     initialDelaySeconds: <span style="color:#ae81ff">10</span>
+     httpGet:
+      port: <span style="color:#ae81ff">9090</span>
+</code></pre></div><h4 id="apply-yaml">Apply Yaml</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ kubectl apply -f pod-readiness.yaml
+pod/coffee-app created
+</code></pre></div><h4 id="verify-pod-status">Verify Pod status</h4>
+<p>Try to identify the difference.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ kubectl get pods
+NAME         READY   STATUS              RESTARTS   AGE
+coffee-app   0/1     ContainerCreating   <span style="color:#ae81ff">0</span>          3s
+$ kubectl get pods
+NAME         READY   STATUS    RESTARTS   AGE
+coffee-app   0/1     Running   <span style="color:#ae81ff">0</span>          25s
+$ kubectl get pods
+NAME         READY   STATUS    RESTARTS   AGE
+coffee-app   1/1     Running   <span style="color:#ae81ff">0</span>          32s
+</code></pre></div><h4 id="delete-the-pod">Delete the Pod</h4>
+<p>Yes ,we can delete the objects using the same yaml which we used to create/apply it</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ kubectl delete -f pod-readiness.yaml
+pod <span style="color:#e6db74">&#34;coffee-app&#34;</span> deleted
+$
+</code></pre></div><h4 id="probe-tuning">Probe Tuning.</h4>
+<pre><code>failureThreshold     &lt;integer&gt;
+  Minimum consecutive failures for the probe to be considered failed after
+  having succeeded. Defaults to 3. Minimum value is 1.
+
+initialDelaySeconds  &lt;integer&gt;
+  Number of seconds after the container has started before liveness probes
+  are initiated. More info:
+  https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes
+
+periodSeconds        &lt;integer&gt;
+  How often (in seconds) to perform the probe. Default to 10 seconds. Minimum
+  value is 1.
+
+timeoutSeconds       &lt;integer&gt;
+  Number of seconds after which the probe times out. Defaults to 1 second.
+  Minimum value is 1. More info:
+  https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes
+</code></pre>
+
+
+
+
+<footer class=" footline" >
+	
+</footer>
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/02-pods/03-create-pod/" title=""> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/02-pods/05-hands-on/" title="" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1579521599"></script>
+    <script src="/js/perfect-scrollbar.min.js?1579521599"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1579521599"></script>
+    <script src="/js/jquery.sticky.js?1579521599"></script>
+    <script src="/js/featherlight.min.js?1579521599"></script>
+    <script src="/js/highlight.pack.js?1579521599"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1579521599"></script>
+    <script src="/js/learn.js?1579521599"></script>
+    <script src="/js/hugo-learn.js?1579521599"></script>
+
+    <link href="/mermaid/mermaid.css?1579521599" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1579521599"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+
+  </body>
+</html>

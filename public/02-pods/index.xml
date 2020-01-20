@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pods &amp; Nodes on My New Hugo Site</title>
+    <link>http://example.org/02-pods/</link>
+    <description>Recent content in Pods &amp; Nodes on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 29 Dec 2018 17:15:52 +0000</lastBuildDate>
+    
+	<atom:link href="http://example.org/02-pods/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>http://example.org/02-pods/05-hands-on/</link>
+      <pubDate>Sat, 29 Dec 2018 17:15:52 +0000</pubDate>
+      
+      <guid>http://example.org/02-pods/05-hands-on/</guid>
+      <description>hands on section</description>
+    </item>
+    
+  </channel>
+</rss>

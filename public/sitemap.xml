@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://example.org/02-pods/01-what-is-pod/</loc>
+    <lastmod>2018-12-29T17:15:52+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/03-labels_and_annotations/01-labels/</loc>
+    <lastmod>2018-12-29T17:15:52+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/03-labels_and_annotations/02-annotations/</loc>
+    <lastmod>2018-12-29T17:15:52+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/04-services/01-expose-pod/</loc>
+    <lastmod>2018-12-29T17:15:52+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/05-cheat_sheet/01-deployment/</loc>
+    <lastmod>2018-12-29T17:15:52+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/01-introduction/</loc>
+    <lastmod>2018-12-29T17:15:52+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/02-pods/02-create-pod/</loc>
+    <lastmod>2018-12-29T17:15:52+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/04-services/02-nodeport/</loc>
+    <lastmod>2018-12-29T17:15:52+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/05-cheat_sheet/02-expose-deployment/</loc>
+    <lastmod>2018-12-29T17:15:52+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/02-pods/03-create-pod/</loc>
+    <lastmod>2018-12-29T17:15:52+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/04-services/03-clusterip/</loc>
+    <lastmod>2018-12-29T17:15:52+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/05-cheat_sheet/03-scaling/</loc>
+    <lastmod>2018-12-29T17:15:52+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/02-pods/</loc>
+    <lastmod>2018-12-29T17:15:52+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/01-introduction/04-nodes/</loc>
+    <lastmod>2018-12-29T17:15:52+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/04-services/04-loadbalancer/</loc>
+    <lastmod>2018-12-29T17:15:52+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/03-labels_and_annotations/</loc>
+    <lastmod>2018-12-29T17:15:52+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/01-introduction/05-namespaces/</loc>
+    <lastmod>2018-12-29T17:15:52+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/04-services/05-endpoints/</loc>
+    <lastmod>2018-12-29T17:15:52+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/02-pods/06-self-healing-readiness/</loc>
+    <lastmod>2018-12-29T17:15:52+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/04-services/</loc>
+    <lastmod>2018-12-29T17:15:52+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/02-pods/05-hands-on/</loc>
+    <lastmod>2018-12-29T17:15:52+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/02-pods/07-self-healing-liveness/</loc>
+    <lastmod>2018-12-29T17:15:52+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/01-introduction/05-docker/</loc>
+    <lastmod>2018-12-29T17:15:52+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/05-cheat_sheet/</loc>
+    <lastmod>2018-12-29T17:15:52+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/01-introduction/06-kubernetes/</loc>
+    <lastmod>2018-12-29T17:15:52+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/</loc>
+    <lastmod>2018-12-29T17:15:52+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.org/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/</loc>
+  </url>
+  
+</urlset>
