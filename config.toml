@@ -1,4 +1,4 @@
-baseURL = "http://localhost:1313/"
-languageCode = "en-us"
-title = "My New Hugo Site"
-theme = "techreturners-workshop-doc"
+baseURL = "https://hopeful-hypatia-66a2d4.netlify.com/"
+languageCode = "en-gb"
+title = "Tech Returners Kubernetes Workshop"
+theme = "hugo-theme-learn"
