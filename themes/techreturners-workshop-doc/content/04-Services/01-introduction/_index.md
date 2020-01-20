@@ -16,9 +16,9 @@ Services select Pods based on their labels. When a network request is made to th
 
 What's the difference between a Service and a Deployment in Kubernetes?
 
-## A deployment is responsible for keeping a set of pods running.
+##### - A deployment is responsible for keeping a set of pods running.
 
-## A service is responsible for enabling network access to a set of pods.
+##### - A service is responsible for enabling network access to a set of pods.
 
 We could use a deployment without a service to keep a set of identical pods running in the Kubernetes cluster. The deployment could be scaled up and down and pods could be replicated. Each pod could be accessed individually via direct network requests (rather than abstracting them behind a service), but keeping track of this for a lot of pods is difficult.
 

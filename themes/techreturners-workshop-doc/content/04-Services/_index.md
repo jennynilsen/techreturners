@@ -11,5 +11,4 @@ chapter = true
 
 # Services and Service Discovery
 
-In this session we will solve the maze
 ![maze](services.png?classes=shadow)

@@ -9,58 +9,80 @@ pre = "<b>- </b>"
 # Expose service running on Pod.
 
 #### Service
-A Coffee Pod running in cluster and its listening on port 9090 on Pod's IP.
-How can we expose that service to external world so that users can access it ?
+
+Services play a vital role in the world of kubernetes, they provide a stable endpoint and distribute traffic across pods. 
+
+How can we expose a service to external world so that users can access it ? We need to `expose` the service.
 
 ![Pod](pod-service.png?classess=shadow)
 
-We need to `expose` the service.
+In this section we will deploy a simple “echo server” application onto the cluster and expose the deployment using a NodePort service.
 
-As we know , the Pod IP is not routable outside of the cluster.
-So we need a mechanism to reach the host's port and then that traffic should be diverted to Pod's port.
-
-Lets create a Pod Yaml first.
-
+Deploy a simple “echo server” application onto the cluster
 ```shell
-$ vi coffe.yaml
+$ kubectl create deploy http-echo --image=gcr.io/google-containers/echoserver:1.10
 ```
 
-```yaml
-apiVersion: v1
-kind: Pod
-metadata:
-  name: coffee
-spec:
-  containers:
-  - image: ansilh/demo-coffee
-    name: coffee
-```
-Create Yaml
-```
-$ kubectl create -f coffe.yaml
+Verify that the pods exist
+```shell
+$ kubectl get pods
 ```
 
-Expose the Pod with below command
-```
-$ kubectl expose pod coffee --port=80 --target-port=9090  --type=NodePort
-```
-
-This will create a `Service` object in kubernetes , which will map the Node's port 30836 to `Service` IP/Port 192.168.10.86:80
-
-We can see the derails using `kubectl get service` command  
-```
-$ kubectl get service
-NAME         TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)        AGE
-coffee       NodePort    192.168.10.86    <none>        80:30391/TCP   6s
-kubernetes   ClusterIP   192.168.10.1     <none>        443/TCP        26h
+Output:
+```shell
+NAME                        READY   STATUS    RESTARTS   AGE
+http-echo-d458c6655-8n4x9   1/1     Running   0          12s
 ```
 
-We can also see that the port is listening and kube-proxy is the one listening on that port.
+Is there a service?
+```shell
+$ kubectl get svc
+```
+Nope.
 
+Expose the deployment
+```shell
+$ kubectl expose deployment http-echo --type=NodePort --name=echo-service --port=8080
 ```
-$ sudo netstat -tnlup |grep 30836
-tcp6       0      0 :::30391                :::*                    LISTEN      2785/kube-proxy
+
+Verify that the service now exists
+```shell
+$ kubectl get svc -o wide
 ```
+
+Lets describe the service to see how the mapping of Pods works in a service object. How many endpoints are there?
+```shell
+$ kubectl describe svc echo-service
+```
+
+Access the service
+```shell
+$ kubectl port-forward svc/echo-service 8080
+```
+```shell
+$ curl 127.0.0.1:8080
+```
+
+Scale up the deployment
+```shell
+kubectl scale deployment http-echo --replicas=10
+```
+
+Check the status of the rollout 
+```shell
+$ kubectl rollout status
+```
+
+List the events to see everything that has just happened
+```shell
+$ kubectl get events
+```
+
+
+
+
+
+
 
 Now you can open browser and access the `Coffee` app using URL `http://192.168.56.201:30391`
 
