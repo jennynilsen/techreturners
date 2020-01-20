@@ -1,4 +1,4 @@
 baseURL = "https://hopeful-hypatia-66a2d4.netlify.com/"
 languageCode = "en-gb"
 title = "Tech Returners Kubernetes Workshop"
-theme = "hugo-theme-learn"
+theme = "techreturners-workshop-doc"
