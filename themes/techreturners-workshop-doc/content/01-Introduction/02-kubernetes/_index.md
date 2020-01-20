@@ -1,7 +1,7 @@
 +++
 menutitle = "Kubernetes"
 date = 2018-12-29T17:15:52Z
-weight = 11
+weight = 2
 chapter = false
 pre = "<b>- </b>"
 +++
