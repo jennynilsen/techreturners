@@ -6,6 +6,8 @@ chapter = false
 pre = "<b>- </b>"
 +++
 
+# Setting up Kind cluster
+
 ### Install Docker if you don't already have it 
 
 ```shell
