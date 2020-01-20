@@ -40,7 +40,7 @@ metadata:
   name: coffee-app
 spec:
   containers:
-  - image: ansilh/demo-coffe
+  - image: ansilh/democoffee
     name: coffee
 ```
 
@@ -82,7 +82,7 @@ $ kubectl describe pod coffee-app
 ```
 Can you docker pull the image?
 ```shell
-$ docker pull ansilh/demo-coffe
+$ docker pull ansilh/democoffee
 ```
 
 Can you determine what the issue is?
@@ -101,7 +101,7 @@ coffee-app   1/1     Running   0          9s    10.244.0.28   kind-control-plane
 #### Use Port Forward to access the app
 
 ```shell
-kubectl port-forward pod/coffee 9090
+kubectl port-forward pod/coffee-app 9090
 ```
 
 Go to http://localhost:9090/ 

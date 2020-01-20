@@ -40,7 +40,7 @@ $ kubectl get svc
 ```
 Nope.
 
-Expose the deployment
+Expose the deployment using the service type NodePort. This setting makes the service visible outside the Kubernetes cluster by the node’s IP address and the port number declared in this property. 
 ```shell
 $ kubectl expose deployment http-echo --type=NodePort --name=echo-service --port=8080
 ```
@@ -78,21 +78,3 @@ List the events to see everything that has just happened
 $ kubectl get events
 ```
 
-
-
-
-
-
-
-Now you can open browser and access the `Coffee` app using URL `http://192.168.56.201:30391`
-
-## Ports in Service Objects
-
-#### nodePort
-This setting makes the service visible outside the Kubernetes cluster by the node’s IP address and the port number declared in this property. The service also has to be of type NodePort (if this field isn’t specified, Kubernetes will allocate a node port automatically).
-
-#### port
-Expose the service on the specified port internally within the cluster. That is, the service becomes visible on this port, and will send requests made to this port to the pods selected by the service.
-
-#### targetPort
-This is the port on the pod that the request gets sent to. Your application needs to be listening for network requests on this port for the service to work.
