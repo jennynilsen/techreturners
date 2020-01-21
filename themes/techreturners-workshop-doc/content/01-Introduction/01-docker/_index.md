@@ -52,5 +52,4 @@ A lightweight, stand-alone, executable package of a piece of software that inclu
 - OpenShift by RedHat
 - PaaS from Amazon, Azure or Google, ...
 
-### Kubernetes?!
 
