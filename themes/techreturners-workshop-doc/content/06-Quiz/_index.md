@@ -11,9 +11,7 @@ chapter = true
 # Quiz
 
 
-##### 1.
-##### 2.
-##### 3.
-##### 4.
-##### 5.
-
+##### 1. What does an endpoint essentially consist of?
+##### 2. What is the main difference between a liveness probe and a readiness probe?
+##### 3. What command can you use to list running pods?
+##### 4. How does a service select pods to forward network requests to?

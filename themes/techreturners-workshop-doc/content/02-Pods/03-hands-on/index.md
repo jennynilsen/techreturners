@@ -6,14 +6,6 @@ chapter = false
 pre = "<b>- </b>"
 +++
 
-+++
-menutitle = "Create a Pod - Declarative"
-date = 2018-12-29T17:15:52Z
-weight = 2
-chapter = false
-pre = "<b>- </b>"
-+++
-
 # Pod - Declarative Way
 
 After completing this session , you will be able to create Pod declaratively.

@@ -6,6 +6,7 @@ chapter = false
 pre = "<b>- </b>"
 +++
 
+
 #### What is a Service in Kubernetes?
 
 A Service enables network access to a set of Pods in Kubernetes.
